@@ -1,0 +1,103 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      3266,         95]
+NotebookOptionsPosition[      2735,         79]
+NotebookOutlinePosition[      3125,         95]
+CellTagsIndexPosition[      3082,         92]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Clear", "[", 
+    RowBox[{"x1", ",", "x2", ",", "x3"}], "]"}], ";"}]}]], "Input",
+ CellChangeTimes->{{4.000372327721127*^9, 4.000372336517714*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"1d72ced0-64a4-4a0c-a656-aceac962e588"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"rovnice", "=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"2", "*", "x1"}], "+", 
+       RowBox[{"2", "*", 
+        RowBox[{"x2", "^", "2"}]}], "+", 
+       RowBox[{"3", "*", "x3"}]}], "==", "11"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"2", "*", "x1"}], "+", 
+       RowBox[{"7", "*", "x2"}], "+", 
+       RowBox[{"3", "*", "x3"}]}], "==", "5"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"2", "*", "x1"}], "+", 
+       RowBox[{"3", "*", 
+        RowBox[{"x2", "^", "2"}]}], "-", "x3"}], "==", "11"}]}], "\n", "\t", 
+    "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vyraz", "=", 
+   RowBox[{"x1", "+", 
+    RowBox[{"x2", "^", "3"}], "+", 
+    RowBox[{"x3", "^", "2"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{4.000371707284403*^9, 4.000371731414588*^9}, {
+  4.0003717901292048`*^9, 4.0003718096002693`*^9}, {4.000371875732318*^9, 
+  4.000371876240096*^9}, {4.0003724616746492`*^9, 4.000372472539557*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"1269bc38-f7bb-4c4d-b282-fe79287334c1"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"reseni", ":=", 
+   RowBox[{"Solve", "[", 
+    RowBox[{"rovnice", ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"x1", ",", "x2", ",", "x3"}], "}"}], ",", " ", "Reals"}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"N", "[", 
+  RowBox[{
+   RowBox[{"vyraz", "/.", 
+    RowBox[{"reseni", "[", 
+     RowBox[{"[", "2", "]"}], "]"}]}], ",", "8"}], "]"}]}], "Input",
+ CellChangeTimes->{{4.000371914676175*^9, 4.000371961231155*^9}, 
+   4.000372057252741*^9, {4.000372087766811*^9, 4.000372099683996*^9}, {
+   4.000372162281992*^9, 4.000372184818822*^9}, {4.000372310390719*^9, 
+   4.000372310713644*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"05517c2e-5aa0-417c-a9d3-6bb40363d00d"]
+},
+WindowSize->{757, 863},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"270f94a7-9b9b-4d47-8923-d9b10aad83f3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 295, 6, 49, "Input",ExpressionUUID->"1d72ced0-64a4-4a0c-a656-aceac962e588"],
+Cell[852, 28, 1158, 30, 131, "Input",ExpressionUUID->"1269bc38-f7bb-4c4d-b282-fe79287334c1"],
+Cell[2013, 60, 718, 17, 49, "Input",ExpressionUUID->"05517c2e-5aa0-417c-a9d3-6bb40363d00d"]
+}
+]
+*)
+
